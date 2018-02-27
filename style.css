@@ -28,9 +28,13 @@ body {
 }
 
 /* ^ Used in every page ^ */
-/*
+
+#things {
+	padding: 10px;
+	height: 200px;
+}
+
 #things img {
 	width: 100%;
 	height: 100%;
 }
-*/

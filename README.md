@@ -1,1 +1,0 @@
-# zandyisrad.github.io

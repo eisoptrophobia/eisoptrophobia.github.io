@@ -11,7 +11,7 @@ body {
 #header {
 	overflow: hidden;
 	background-color: #aaaaff
-	/*position: fixed;*/
+	position: fixed;
 }
 
 #header a {

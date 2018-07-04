@@ -7,7 +7,7 @@
 var radstuff = angular.module("radstuff",[]);
 radstuff.controller("radcontroller",function($scope){
   $scope.rad = "";
-  $scope.recipes = {"raaad": "RAAAD"};
+  $scope.recipes = '{"raaad": "RAAAD"}';
 });
   </script>
   <style>
@@ -19,6 +19,6 @@ radstuff.controller("radcontroller",function($scope){
  <body ng-app="radstuff" ng-controller="radcontroller">
   <input type="text" ng-model="rad">
   <br>
-  <p><b>{{ recipes[radstuff] }}</b> {{ recipes[radstuff] }} worth {{ recipes[radstuff] }}. <i>"{{ recipes[radstuff] }}"</i></p>
+  <p><b>{{ recipes }}</b> {{ recipes[radstuff] }} worth {{ recipes[radstuff] }}. <i>"{{ recipes[radstuff] }}"</i></p>
  <body>
 </html>

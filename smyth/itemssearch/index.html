@@ -2,12 +2,12 @@
 <html>
  <head>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-  <script src="">
+  <script src="index.js"></script>
   <script>
 var radstuff = angularmodule("radstuff",[]);
 radstuff.controller("radcontroller",function($scope){
   $scope.rad = "";
-  $scope.recipes = JSON.parse();
+  $scope.recipes = raad;
 });
   </script>
   <style>
@@ -18,6 +18,7 @@ radstuff.controller("radcontroller",function($scope){
  </head>
  <body ng-app="radstuff">
   <input type="text" ng-model="rad">
-  <p>{{  }}</p>
+  <br>
+  <p><b>{{ recipes[radstuff] }}</b> {{ recipes[radstuff] }} worth {{ recipes[radstuff] }}. <i>"{{ recipes[radstuff] }}"</i></p>
  <body>
 </html>

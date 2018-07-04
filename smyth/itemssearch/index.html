@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="">
+  <script>
+var radstuff = angularmodule("radstuff",[]);
+radstuff.controller("radcontroller",function($scope){
+  $scope.rad = "";
+  $scope.recipes = JSON.parse();
+});
+  </script>
+  <style>
+* {
+  font-family: "Comic Sans MS";
+}
+  </style>
+ </head>
+ <body ng-app="radstuff">
+  <input type="text" ng-model="rad">
+  <p>{{  }}</p>
+ <body>
+</html>

@@ -54,8 +54,12 @@
     <li>CHA: <input type="number" step="0.5" id="cha"></li>
     <li>HPS: <input type="number" step="0.5" id="hps"></li>
    </ul>
-   <button onclick="calc()">Calculate</button>
+   <button id="btn">Calculate</button>
    <p id="out"></p>
+   <script>
+   var outbtn = document.getElementById("btn");
+   outbtn.addEventListener("click",calc,false);
+   </script>
   </div>
  </body>
 </html>

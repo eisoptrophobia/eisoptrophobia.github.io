@@ -6,20 +6,21 @@ items:
 
 {% for item in page.items %}
 
-<a id="page-{{ item }}">
-<div class="page-entry">
-<h2 class="name"></h2>
-<p class="description"></p>
+
+<div id="page-{{ item }}">
+  <a class="pagelink">
+    <h2 class="name"></h2>
+    <p class="description"></p>
+  </a>
 <div>
-</a>
 <script>
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       var data = JSON.parse(this.responseText);
-      document.querySelector("#page-{{ item }}").href = "https://eisoptrophobia.github.io" + data.url;
-      document.querySelector("#page-{{ item }} .page-entry .name").innerText = data.name;
-      document.querySelector("#page-{{ item }} .page-entry .description").innerText = data.description;
+      document.querySelector("#page-{{ item }} .pagelink").href = "https://eisoptrophobia.github.io" + data.url;
+      document.querySelector("#page-{{ item }} .pagelink .name").innerText = data.name;
+      document.querySelector("#page-{{ item }} .pagelink .description").innerText = data.description;
     }
   }
   xhttp.open("GET", "https://eisoptrophobia.github.io/games/{{ item }}/data.json");

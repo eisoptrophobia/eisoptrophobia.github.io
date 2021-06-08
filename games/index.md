@@ -25,7 +25,7 @@ items:
     }
   }
   xhttp.open("GET", "https://eisoptrophobia.github.io/games/{{ item }}/data.json");
-  xhhtp.send();
+  xhttp.send();
 </script>
 
 {% endfor %}

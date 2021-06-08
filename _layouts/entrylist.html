@@ -11,8 +11,8 @@ layout: default
     <p class="description"></p>
 <div>
 <script>
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
+  var xhttp_{{ item }} = new XMLHttpRequest();
+  xhttp_{{ item }}.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       var data = JSON.parse(this.responseText);
       document.querySelector("#page-{{ item }}").onclick = () => {
@@ -22,8 +22,8 @@ layout: default
       document.querySelector("#page-{{ item }} .description").innerText = data.description;
     }
   }
-  xhttp.open("GET", "https://eisoptrophobia.github.io/{{ page.tab }}/{{ item }}/data.json");
-  xhttp.send();
+  xhttp_{{ item }}.open("GET", "https://eisoptrophobia.github.io/{{ page.tab }}/{{ item }}/data.json");
+  xhttp_{{ item }}.send();
 </script>
 
 {% endfor %}

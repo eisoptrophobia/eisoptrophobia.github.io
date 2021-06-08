@@ -16,4 +16,4 @@ This is just somewhere to put my various projects. Most of them are pretty small
 | Links        | External links to things. I'm not sure what things. |
 | Downloads    | Things that you have to download. |
 | Random       | Other random things. |
-| Gorillas     | :flushed: |
+| Gorillas     | &#128563; |

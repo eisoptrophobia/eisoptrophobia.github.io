@@ -8,7 +8,6 @@ I am Zander Denning.
 This is just somewhere to put my various projects. Most of them are pretty small, but there's some larger things too.
 ## How do I navigate this?
 | Tab        | Description |
-
 | ---------- | ----------- |
 | Home       | The home page. There's not much there. |
 | About      | This page. |

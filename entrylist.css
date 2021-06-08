@@ -1,11 +1,11 @@
 .pageentry {
-  border: 2px solid black;
   border-radius: 10px;
   padding: 10px;
-  background-color: #bbbbff;
+  background-color: #9999ff;
   cursor: pointer;
 }
 
 .pageentry:hover {
-  background-color: #9999dd;
+  background-color: #0000ff;
+  color: #ffffff;
 }

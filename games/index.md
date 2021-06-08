@@ -3,6 +3,7 @@ layout: default
 items:
   - the_gallows_farewell
 ---
+<link rel="stylesheet" href="https://eisoptrophobia.github.io/games/style.css">
 
 {% for item in page.items %}
 

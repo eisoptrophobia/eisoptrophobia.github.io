@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>System of Equations Calculator</title>
+ </head>
+ <body>
+  <div id="content">
+   Variables (just a string of letter in a row. no commas or spaces): <input id="variables" type="text"> 
+   <button id="s1">Submit</button>
+  </div>
+<script>
+
+var submit1 = function(){
+	var vars = document.getElementById("variables").value.length;
+	var variables = document.getElementById("variables").value.split("");
+	
+	var tbl = "<p id='h' hidden>" + document.getElementById("variables").value + "</p><table id='values'><tr>";
+	for (var g = 1; g <= vars; g++){
+		tbl += "<th>" + variables[g - 1] + "</th>";
+	}
+	tbl += "<th>=</th></tr>"
+	
+	for (var i = 1; i <= vars; i++){
+		
+		var tblr = "<tr>";
+		for (var j = 1; j <= vars + 1; j++){
+			tblr += "<td><input type='number' id='s" + i + "_" + j + "'></td>";
+		}
+		tblr += "</tr>";
+		tbl += tblr;
+	}
+	tbl += "</table>";
+	
+	document.getElementById("content").innerHTML = tbl + "<button id=s2>Submit</button>";
+	
+	document.getElementById('s2').addEventListener('click',function(){
+		submit2();
+	});
+};
+
+var system = function(matrix){
+	if (matrix.length === 1){
+		return([matrix[0][1] / matrix[0][0]]);
+	}
+	else{
+		var newm = [];
+		for (var k = 0; k <= matrix.length - 2; k++){
+			console.log(newm);
+			var row = [];
+			for (var n = 0; n <= matrix.length; n++){
+				row.push((matrix[k][n] * matrix[k + 1][0]) - (matrix[k + 1][n] * matrix[k][0]));
+				console.log(row);
+			}
+			row.shift();
+			console.log(row);
+			newm.push(row.slice());
+		}
+		console.log(newm);
+		var infvars = system(newm);
+		console.log(infvars);
+		var ninfvars = infvars.slice().reverse();
+		console.log(ninfvars);
+		newv = matrix[0][matrix.length]
+		console.log(newv);
+		for (var p = 0; p < ninfvars.length; p++){
+			newv -= matrix[0][p + 1] * ninfvars[p];
+		}
+		console.log(newv);
+		infvars.push(newv / matrix[0][0]);
+		return infvars;
+	}
+	
+};
+
+var submit2 = function(){
+	var variables = document.getElementById("h").innerHTML.split("");
+	var vars = variables.length;
+	
+	var matrix = [];
+	
+	for (var l = 1; l <= vars; l++){
+		var row = [];
+		for (var m = 1; m <= vars + 1; m++){
+			r = Number(document.getElementById("s" + l.toString() + "_" + m.toString()).value);
+			console.log(r);
+			row.push(r);
+		}
+		console.log(row);
+		matrix.push(row);
+		console.log(matrix);
+	}
+	solution = system(matrix).reverse();
+	console.log(solution)
+	
+	var outdat = "";
+	for (var q = 0; q < vars; q++){
+		outdat += (variables[q].toString() + " = " + solution[q] + "<br><br>");
+	}
+	console.log(outdat);
+	document.getElementById("content").innerHTML = outdat;
+};
+
+
+
+document.getElementById("s1").addEventListener("click",function(){
+	submit1();
+});
+
+
+
+</script>
+ </body>
+</html>

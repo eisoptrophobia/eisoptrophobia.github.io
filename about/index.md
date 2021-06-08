@@ -1,7 +1,7 @@
 ---
 layout: default
-stylesheet: about/style.css
 ---
+<link rel="stylesheet" href="https://eisoptrophobia.github.io/{{ stylesheet }}">
 # Information
 ## Who am I?
 I am Zander Denning.

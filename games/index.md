@@ -7,10 +7,10 @@ items:
 {% for item in page.items %}
 
 <a id="page-{{ item }}">
-  <div class="page-entry">
-    <h2 class="name"></h2>
-    <p class="description"></p>
-  <div>
+<div class="page-entry">
+<h2 class="name"></h2>
+<p class="description"></p>
+<div>
 </a>
 <script>
   var xhttp = new XMLHttpRequest();

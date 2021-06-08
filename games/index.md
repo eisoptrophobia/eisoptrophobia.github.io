@@ -2,9 +2,6 @@
 layout: default
 items:
   - the_gallows_farewell
-  - B
-  - C
-  - D
 ---
 
 {% for item in page.items %}

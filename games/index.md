@@ -13,8 +13,7 @@ items:
 <script>
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
-    console.log(this.readystate + " " + this.status);
-    if (this.readystate == 4 && this.status == 200) {
+    if (this.readyState == 4 && this.status == 200) {
       var data = JSON.parse(this.responseText);
       console.log(data);
       var a = document.querySelector("#page-{{ item }} h2 .link");

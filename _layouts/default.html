@@ -3,6 +3,12 @@
   <head>
     {{ seo }}
     <link rel="stylesheet" href="index.css">
+    {% if script %}
+    <script src="{{ script }}"></script>
+    {% endif %}
+    {% if stylesheet %}
+    <link rel="stylesheet" href="{{ stylesheet }}">
+    {% endif %}
   </head>
   <body>
     <header class="header sticky sticky--top js-header">

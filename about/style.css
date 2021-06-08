@@ -1,0 +1,16 @@
+#directory, #directory * {
+  border: 1px solid black;
+}
+
+#directory {
+  border-collapse: collapse;
+}
+
+#directory th {
+  background-color: #444444;
+  color: white;
+}
+
+#directory tr:nth-child(even) {
+  background-color: #dddddd;
+}

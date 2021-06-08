@@ -15,6 +15,7 @@ items:
   xhttp.onreadystatechange = function() {
     if (this.readystate == 4 && this.status == 200) {
       var data = JSON.parse(this.responseText);
+      console.log(data);
       var a = document.querySelector("#page-{{ item }} h2 .link");
       a.href = "https://eisoptrophobia.github.io" + data.url;
       a.innerText = data.name;

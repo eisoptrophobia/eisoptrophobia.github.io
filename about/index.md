@@ -1,6 +1,6 @@
 ---
 layout: default
-stylesheet: index.css
+stylesheet: about/style.css
 ---
 # Information
 ## Who am I?

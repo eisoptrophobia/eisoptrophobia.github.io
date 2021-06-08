@@ -1,5 +1,6 @@
 ---
 layout: default
+stylesheet: index.css
 ---
 # Information
 ## Who am I?
@@ -18,3 +19,4 @@ This is just somewhere to put my various projects. Most of them are pretty small
 | Downloads    | Things that you have to download. |
 | Random       | Other random things. |
 | Gorillas     | &#128563; |
+{: #directory }

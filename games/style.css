@@ -1,6 +1,10 @@
 .pageentry {
   border: 2px solid black;
-  border-radius: 10%;
+  border-radius: 10px;
   background-color: #bbbbff;
   cursor: pointer;
+}
+
+.pageentry:hover {
+  background-color: #9999dd;
 }

@@ -11,13 +11,13 @@
      <div class="grid">
       <nav class="navigation">
        <ul class="navigation__list navigation__list--inline">
-        <li class="navigation__item"><a href="https://eisoptrophobia.github.io/" class="is-active">Home</a></li>
-        <li class="navigation__item"><a href="https://eisoptrophobia.github.io/about">About</a></li>
-        <li class="navigation__item"><a href="https://eisoptrophobia.github.io/tools">Tools</a></li>
-        <li class="navigation__item"><a href="https://eisoptrophobia.github.io/games">Games</a></li>
-        <li class="navigation__item"><a href="https://eisoptrophobia.github.io/links">Links</a></li>
-        <li class="navigation__item"><a href="https://eisoptrophobia.github.io/downloads">Downloads</a></li>
-        <li class="navigation__item"><a href="https://eisoptrophobia.github.io/random">Random</a></li>
+        <li class="navigation__item"><a href="https://eisoptrophobia.github.io/"{% unless dir[1] %} class="is-active"{% endunless %}>Home</a></li>
+        <li class="navigation__item"><a href="https://eisoptrophobia.github.io/about"{% if dir[1] == "about" %} class="is-active"{% endif %}>About</a></li>
+        <li class="navigation__item"><a href="https://eisoptrophobia.github.io/tools"{% if dir[1] == "tools" %} class="is-active"{% endif %}>Tools</a></li>
+        <li class="navigation__item"><a href="https://eisoptrophobia.github.io/games"{% if dir[1] == "games" %} class="is-active"{% endif %}>Games</a></li>
+        <li class="navigation__item"><a href="https://eisoptrophobia.github.io/links"{% if dir[1] == "links" %} class="is-active"{% endif %}>Links</a></li>
+        <li class="navigation__item"><a href="https://eisoptrophobia.github.io/downloads"{% if dir[1] == "downloads" %} class="is-active"{% endif %}>Downloads</a></li>
+        <li class="navigation__item"><a href="https://eisoptrophobia.github.io/random"{% if dir[1] == "random" %} class="is-active"{% endif %}>Random</a></li>
         <li class="navigation__item"><a href="https://www.google.com/search?q=gorillas&tbm=isch">Gorillas</a></li>
        </ul>
       </nav>
@@ -25,7 +25,6 @@
     </header>
     <main class="main">
      <div class="grid">
-      {{ dir[1] }}
       {{ content }}
      </div>
     </main>

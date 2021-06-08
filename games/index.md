@@ -11,7 +11,7 @@ items:
     <h2 class="name"></h2>
     <p class="description"></p>
   <div>
-</div>
+</a>
 <script>
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {

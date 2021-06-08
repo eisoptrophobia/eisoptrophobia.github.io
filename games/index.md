@@ -1,8 +1,12 @@
 ---
 layout: default
-pageitems: "a", "b", "c", "d"
+items:
+  - A
+  - B
+  - C
+  - D
 ---
 
-{% for item in pageitems %}
+{% for item in page.items %}
 # {{ item }}
 {% endfor %}

@@ -6,9 +6,11 @@ items:
 
 {% for item in page.items %}
 
-<div id="page-{{ item }}">
-  <h2><a class="link"></a></h2>
-  <p class="description"></p>
+<a id="page-{{ item }}">
+  <div class="page-entry">
+    <h2 class="name"></h2>
+    <p class="description"></p>
+  <div>
 </div>
 <script>
   var xhttp = new XMLHttpRequest();
@@ -16,9 +18,8 @@ items:
     if (this.readyState == 4 && this.status == 200) {
       var data = JSON.parse(this.responseText);
       console.log(data);
-      var a = document.querySelector("#page-{{ item }} h2 .link");
-      a.href = "https://eisoptrophobia.github.io" + data.url;
-      a.innerText = data.name;
+      document.querySelector("#page-{{ item }}").href = "https://eisoptrophobia.github.io" + data.url;
+      document.querySelector("#page-{{ item }} .name").innerText = data.name;
       document.querySelector("#page-{{ item }} .description").innerText = data.description;
     }
   }

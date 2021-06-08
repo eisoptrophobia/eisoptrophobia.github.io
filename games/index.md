@@ -17,7 +17,9 @@ items:
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       var data = JSON.parse(this.responseText);
-      document.querySelector("#page-{{ item }}").onclick = "window.location = 'https://eisoptrophobia.github.io" + data.url + "';";
+      document.querySelector("#page-{{ item }}").onclick = () => {
+        window.location = "https://eisoptrophobia.github.io" + data.url;
+      }
       document.querySelector("#page-{{ item }} .name").innerText = data.name;
       document.querySelector("#page-{{ item }} .description").innerText = data.description;
     }

@@ -1,18 +1,12 @@
 ---
 layout: link
-href: https://replit.com/@Integrand/mr-bones
+href: https://github.com/eisoptrophobia/kubryzltcraft
 ---
 
 # Mr. Bones
-A Discord bot for tabletop RPG servers
+A mod for Kubryzltcraft servers
 
-Commands:
-<ul>
-  <li>*ping: Pings the bot</li>
-  <li>*help: Gets help</li>
-  <li>*roll: Rolls dice</li>
-  <li>*vote: Creates a vote</li>
-  <li>*char: Manages Smyth characters</li>
-</ul>
+Two teams, Crimson and Gold, fight for Keys across dimensions to capture blocks known as Kubryzlts that are scattered throughout the world for their teams\\
+This mod implements the Keys and Kubryzlts
 
-[Invite link](https://discord.com/api/oauth2/authorize?client_id=537850214359236614&permissions=0&scope=bot)
+[Compiled JARs](https://github.com/eisoptrophobia/kubryzltcraft-bin)

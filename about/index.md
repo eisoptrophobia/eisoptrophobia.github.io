@@ -4,7 +4,7 @@ layout: default
 <link rel="stylesheet" href="https://eisoptrophobia.github.io/about/style.css">
 # Information
 ## Who am I?
-I am Zander Denning.
+I am me.
 ## What is this website?
 This is just somewhere to put my various projects. Most of them are pretty small, but there's some larger things too.
 ## How do I navigate this?

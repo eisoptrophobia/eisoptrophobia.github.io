@@ -6,4 +6,5 @@ items:
   - the_gallows_farewell
   - snake_with_portals
   - ai_pong
+  - amogle
 ---
